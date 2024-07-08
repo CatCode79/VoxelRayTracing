@@ -153,8 +153,8 @@ struct HitResult {
     water_dist: f32,
 }
 
-fn ray_color(rng: ptr<function, u32>, ray: Ray) -> vec3<f32> {
-    var ray = ray;
+fn ray_color(rng: ptr<function, u32>, ray_param: Ray) -> vec3<f32> {
+    var ray = ray_param;
     var ray_color: vec3<f32> = vec3(1.0);
     var incoming_light: vec3<f32> = vec3(0.0);
     
